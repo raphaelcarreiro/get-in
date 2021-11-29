@@ -49,10 +49,16 @@ export const ContentContainer = styled.div`
     }
   }
 
+
+
+  .container-input{
+    width: 50%;
+  }
+
   .content-input {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     position: relative;
 
     & input {
@@ -60,13 +66,14 @@ export const ContentContainer = styled.div`
       justify-content: center;
       padding-left: 3.3125rem;
       display: flex;
-      width: 33.75rem;
+      width: 100%;
       height: 3.125rem;
       border-radius: 8px;
       border: 1px solid var(--light-medium);
 
-      ::placeholder {
+      &::placeholder {
         color: var(--dark);
+        font-size: 1rem;
       }
     }
 

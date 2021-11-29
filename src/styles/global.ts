@@ -39,6 +39,12 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  @media(max-width: 420px) {
+    html {
+      font-size: 60.50%;
+    }
+  }
+
   :root {
     --primary: #ED1C24;
     --dark-down: #333333;

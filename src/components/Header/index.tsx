@@ -13,9 +13,11 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="content-input">
-          <input  placeholder="Encontre um restaurante"/>
-          <Search />
+        <div className="container-input">
+          <div className="content-input">
+            <input placeholder="Encontre um restaurante" />
+            <Search />
+          </div>
         </div>
       </Styles.ContentContainer>
     </Styles.Container>
