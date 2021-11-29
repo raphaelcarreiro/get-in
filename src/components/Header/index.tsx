@@ -7,7 +7,6 @@ export const Header = () => {
       <Styles.ContentContainer>
         <div className="content">
           <img src="/logo.svg" alt="logo" />
-
           <div>
             <h1>Descubra novos sabores</h1>
             <p>Aqui eu converso com você sobre nossa proposta</p>

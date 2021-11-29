@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: flex-start;
   background: url("/header.svg") no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   width: 100%;
 `;
 
@@ -63,7 +64,7 @@ export const ContentContainer = styled.div`
       height: 3.125rem;
       border-radius: 8px;
       border: 1px solid var(--light-medium);
-      
+
       ::placeholder {
         color: var(--dark);
       }
