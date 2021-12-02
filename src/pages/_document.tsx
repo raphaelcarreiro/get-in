@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
             type="image/svg+xml"
             sizes="any"
           />
+
         </Head>
         <body>
           <Main />

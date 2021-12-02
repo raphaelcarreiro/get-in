@@ -55,6 +55,11 @@ export const Header = styled.div<HeaderProps>`
     > svg {
       margin-right: 14px;
     }
+
+    @media(max-width: 1200px) {
+        top: 20px;
+        left: 20px;
+      }
   }
 
   .header-cover {
@@ -62,7 +67,7 @@ export const Header = styled.div<HeaderProps>`
     top: 0;
     right: 0;
     left: 0;
-    height: 187px;
+    height: 100%;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -86,6 +91,7 @@ export const Header = styled.div<HeaderProps>`
       justify-content: center;
       align-items: center;
       border: 1px solid white;
+      flex-shrink: 0;
 
       .restaurant-logo {
         border-radius: 50%;
@@ -96,5 +102,15 @@ export const Header = styled.div<HeaderProps>`
     > .restaurant-name {
       margin-bottom: 10px;
     }
+
+    @media(max-width: 600px) {
+      flex-direction: column;
+      padding: 20px;
+    }
   }
+
+  @media(max-width: 600px) {
+    height: auto;
+  }
+
 `;

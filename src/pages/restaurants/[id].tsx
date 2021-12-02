@@ -1,6 +1,7 @@
 import type { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import Restaurant from "../../components/restaurant/Restaurant";
+import { formatPhoneNumber } from "../../helpers/phoneNumberFormatter";
 import api from "../../services/api";
 import { Restaurant as RestaurantType } from "../../types/restaurant";
 
@@ -22,7 +23,7 @@ export const getServerSideProps: GetServerSideProps<RestaurantPageProps> =
       props: {
         restaurant: {
           ...response.data.data,
-          formattedPhone: response.data.data.telephone,
+          formattedPhone: formatPhoneNumber(response.data.data.telephone),
         },
       },
     };

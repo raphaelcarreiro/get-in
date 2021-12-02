@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    font-size: 100%;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
   }
@@ -17,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-  cursor: pointer;
+    cursor: pointer;
   }
 
   a {
@@ -26,23 +30,6 @@ export const GlobalStyle = createGlobalStyle`
 
   #__next {
     min-height: 100vh;
-  }
-
-  @media(max-width: 1080px) {
-    html {
-      font-size: 93.75%;
-    }
-  }
-  @media(max-width: 720px) {
-    html {
-      font-size: 87.50%;
-    }
-  }
-
-  @media(max-width: 420px) {
-    html {
-      font-size: 60.50%;
-    }
   }
 
   :root {
