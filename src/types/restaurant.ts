@@ -9,4 +9,5 @@ export interface Restaurant {
   price_range: string;
   telephone: string;
   website: string;
+  formattedPhone: string;
 }

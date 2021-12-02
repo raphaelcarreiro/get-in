@@ -20,7 +20,10 @@ export const getServerSideProps: GetServerSideProps<RestaurantPageProps> =
 
     return {
       props: {
-        restaurant: response.data.data,
+        restaurant: {
+          ...response.data.data,
+          formattedPhone: response.data.data.telephone,
+        },
       },
     };
   };

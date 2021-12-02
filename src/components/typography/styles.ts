@@ -8,7 +8,7 @@ interface StyledTypographyProps {
 export const StyledTypography = styled.p<StyledTypographyProps>`
   font-family: var(--primary-font);
   font-style: normal;
-  color: var(--total-contrast);
+  color: inherit;
 
   ${(props) =>
     props.size &&
